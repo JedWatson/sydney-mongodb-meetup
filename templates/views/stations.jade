@@ -3,3 +3,6 @@ extends ../layouts/default
 block content
 	.container
 		h1 Train Stations in NSW
+		
+		each station in stations
+			p= station.name
