@@ -1,4 +1,6 @@
-sydney-mongodb-meetup
-=====================
+Keystone / MongoDB Sydney Workshop Demo
+=======================================
 
-The resource files for the hand-on Keystone session @ the Sydney MongoDB Meet-up, 25th Feb 2014
+This is a demo of the end result of the hands-on Keystone session @ the Sydney MongoDB Meet-up, 25th Feb 2014.
+
+
