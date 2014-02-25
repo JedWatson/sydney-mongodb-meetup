@@ -44,7 +44,8 @@ keystone.set('locals', {
 	_: require('underscore'),
 	env: keystone.get('env'),
 	utils: keystone.utils,
-	editable: keystone.content.editable
+	editable: keystone.content.editable,
+	google_api_key: keystone.get('google api key')
 });
 
 // Load your project's Routes

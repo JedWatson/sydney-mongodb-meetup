@@ -1,8 +1,19 @@
 extends ../layouts/default
 
+block js
+	script(type='text/javascript', src='https://maps.googleapis.com/maps/api/js?key=' + google_api_key + '&sensor=false&libraries=places')
+	script(type='text/javascript', src='/js/views/stations.js')
+
 block content
 	.container
-		h1 Train Stations in NSW
+		h1 Train Stations 
+			if near
+				| near #{near}
+			else
+				| in NSW
+		
+		.form-group
+			input(type='text', id='place-autocomplete', placeholder='search for a place...', value=near).form-control
 		
 		each station in stations
 			p= station.name
