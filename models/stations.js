@@ -6,7 +6,7 @@ var Station = new keystone.List('Station', {
 });
 
 Station.add({
-	name: { type: String, default: Date.now },
+	name: { type: String },
 	location: { type: Types.Location }
 });
 
